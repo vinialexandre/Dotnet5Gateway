@@ -1,0 +1,54 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "spiderman",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "spiderman",
+      "UpstreamPathTemplate": "/spiderman/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Patch" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "batman",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "batman",
+      "UpstreamPathTemplate": "/batman/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Patch" ]
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "spiderman",
+      "Config": [
+        {
+          "Name": "Spiderman",
+          "Version": "v1",
+          "Url": "http://spiderman/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "batman",
+      "Config": [
+        {
+          "Name": "Batman",
+          "Version": "v1",
+          "Url": "http://batman/swagger/v1/swagger.json"
+        }        
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+  }
+}
