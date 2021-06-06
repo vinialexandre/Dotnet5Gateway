@@ -1,5 +1,5 @@
 <div align="left">
-<h1>Application Gateway With Doent 5 Auth/jwt</h1>
+<h1>Application Gateway With Dotnet 5 Auth/jwt</h1>
 
 <p>Simple application in dotnet 5 to practice some techniques</p>
 <br>
